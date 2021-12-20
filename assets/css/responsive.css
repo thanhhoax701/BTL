@@ -1,0 +1,667 @@
+/* ----------------------------------------------------------
+
+File responsive.css là file css dùng để định dạng trang web hiển thị được trên các thiết bị (Desktop, Tablet, Mobile)
+1. Người viết: 
+    - Trần Thanh Hòa _ MSSV: B1908387 _ Email: hoaB1908387@student.ctu.edu.vn
+    - Đỗ Quốc Trường _ MSSV: B1913349 _ Email: truongB1913349@student.ctu.edu.vn
+    - Lê Thị Kim Hân _ MSSV: B1906469 _ Email: hanB1906469@student.ctu.edu.vn
+2. Ngày tạo: 22/11/2021
+3. Cập nhật lần cuối: 18/12/2021
+4. Tham khảo: 
+    a) https://fullstack.edu.vn/
+    b) https://www.niemvuilaptrinh.com/
+
+-------------------------------------------------------------*/
+
+
+/*  PC */
+
+@media (min-width: 1024px) {
+    .hide-on-pc {
+        display: none;
+    }
+    .grid .wided,
+    .grid.wided {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+    .home-product {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+    .product-shock {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .product-banner {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .product__group {
+        margin: 16px 0;
+    }
+    .product__main-2 {
+        display: none;
+    }
+    .show-2,
+    .show-4,
+    .show-6,
+    .show-8,
+    .show-10 {
+        display: flex !important;
+    }
+    #show_discount {
+        display: flex;
+    }
+    .or {
+        top: 50% !important;
+    }
+    /* Sản phẩm chi tiết */
+    ul.product__content-right--description-content-b {
+        padding-left: 20px;
+    }
+}
+
+
+/* Mobile & Tablet */
+
+@media (max-width: 1023px) {
+    .grid.wide {
+        padding-left: 22px;
+        padding-right: 22px;
+    }
+    .hide-on-mobile-tablet {
+        display: none;
+    }
+    .page__header {
+        position: fixed;
+        z-index: 99;
+        top: 0;
+        right: 0;
+        left: 0;
+    }
+    .page__container {
+        margin-top: var(--header-height);
+        padding: 0;
+    }
+    .mobile-category {
+        margin: 12px 0;
+    }
+    /* Nav mobile */
+    .nav__bars-btn {
+        cursor: pointer;
+        display: block;
+    }
+    .nav__pc {
+        display: none;
+    }
+    .discount__product--title:hover {
+        color: #e41728;
+        font-weight: 600;
+    }
+    .discount__product--title::after {
+        display: none;
+    }
+    /* trang-chu.html */
+    .container-sticky {
+        position: static;
+    }
+    /* san-pham.html */
+    .see-more-product,
+    .see-more-product-hide {
+        display: none;
+    }
+    #show_discount,
+    #show_clothes {
+        display: none;
+    }
+    /* gioi-thieu.html */
+    .introduce-title:hover::after,
+    .info-title:hover::after {
+        display: none;
+    }
+    .clip {
+        padding-bottom: 20px;
+    }
+    /* sign-up.html */
+    .sign-up .left {
+        width: 100%;
+        padding-top: 0;
+    }
+    #message {
+        top: 67px;
+        right: 10px;
+    }
+    /* sign-in */
+    .content_sign-up,
+    .content_sign-in {
+        background-color: #fff;
+    }
+    .content-heading {
+        padding: 0 28px 0 28px;
+        line-height: 58px;
+    }
+    /* Sản phẩm chi tiết */
+    .product__content-right--description-content {
+        justify-content: flex-start;
+    }
+}
+
+
+/* Tablet */
+
+@media (min-width: 740px) and (max-width: 1023px) {
+     :root {
+        --header-height: 68px;
+        --navbar-height: 0px;
+    }
+    .hide-on-tablet {
+        display: none;
+    }
+    .header-with-search {
+        margin: 0 6px;
+    }
+    .header__search {
+        margin: 0 15px 0 26px;
+    }
+    .nav__bars-btn {
+        margin-left: -10px;
+    }
+    .input-search {
+        width: 570px;
+    }
+    .output__search {
+        width: 100%;
+        height: 50vh;
+        overflow-y: auto;
+    }
+    .close-the-search-panel {
+        position: relative;
+        top: 20%;
+        margin-top: -50px;
+        padding: 0 0 8px 0;
+    }
+    .close-the-search-panel-title {
+        position: absolute;
+        right: 43%;
+    }
+    .header__search-select {
+        display: none;
+    }
+    .header__cart {
+        margin: 0;
+        padding: 0;
+    }
+    /* san-pham.html */
+    .home-product-item__order input {
+        font-size: 1.6rem;
+    }
+    .home-product-item__order input {
+        width: 50px;
+    }
+    /* dang-ky.html */
+    .sign-up {
+        padding: 0 20px 20px;
+        width: 100%;
+        display: grid;
+        justify-items: center;
+    }
+    .or {
+        top: 63%;
+    }
+    .right ul {
+        padding: 0;
+    }
+    /* dang-nhap.html */
+    .auth-form {
+        top: 17%;
+        left: 17%;
+    }
+    #or_sign-in {
+        top: 52%;
+    }
+    /* Sản phẩm chi tiết */
+    .product__main {
+        padding: 0 5%;
+    }
+    .product__content-right {
+        padding-left: 0;
+    }
+    .product__content-quantity h3 {
+        padding-right: 12px;
+    }
+    .product__content.wide {
+        flex-direction: row;
+    }
+    .product__content-right--description-gradient {
+        content: " ";
+        position: relative;
+        margin: 12px 200px;
+        width: 100%;
+        height: 3px;
+        background: -webkit-radial-gradient(#3980dc, #fff);
+        background: -moz-radial-gradient(#3980dc, #fff);
+        background: radial-gradient(#3980dc, #fff);
+    }
+    /* don-hang.html */
+    .container__title {
+        margin: 25px 0 20px;
+    }
+    .container__table thead tr {
+        font-size: 1.8rem;
+    }
+    .container__table thead tr th {
+        line-height: 2.1rem;
+    }
+    #product-detail tr td {
+        padding: 10px;
+    }
+}
+
+
+/* Mobile */
+
+@media (max-width: 739px) {
+     :root {
+        --header-height: 54px;
+        --navbar-height: 0px;
+    }
+    .grid .wided,
+    .grid.wided {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .hide-on-mobile {
+        display: none;
+    }
+    .image {
+        height: 120px;
+    }
+    .image-title {
+        font-size: 16px;
+    }
+    .image-sale {
+        font-size: 14px;
+    }
+    .slick-arrow {
+        z-index: 1;
+        top: 26%;
+        width: 26px;
+        height: 26px;
+    }
+    .slick-prev,
+    .slick-next {
+        font-size: 20px;
+        background-color: #b6bbce;
+    }
+    .menu-btn {
+        top: 8px;
+        left: 6px;
+    }
+    .header-with-search {
+        justify-content: space-between;
+    }
+    .header__logo {
+        width: unset;
+        padding-right: 38px;
+    }
+    .header__logo-img {
+        width: 71px;
+        margin: 0 -10px;
+    }
+    .header__search {
+        position: absolute;
+        top: var(--header-height);
+        left: 0;
+        right: 0;
+        height: 46px;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+        z-index: 1;
+        border-bottom: 1px solid var(--primary-color);
+        padding: 0 10px;
+        animation: mobileSearchSideIn linear 0.3s;
+        display: none;
+    }
+    .header__search-select {
+        display: none;
+    }
+    .header__mobile-search {
+        padding: 0;
+    }
+    .header__search-btn {
+        width: 42px;
+    }
+    .input-search {
+        width: 328px;
+    }
+    .output__search {
+        z-index: 9999;
+        top: 45px;
+        width: 100%;
+        height: 300px;
+        overflow-y: auto;
+    }
+    .output-item {
+        display: none;
+    }
+    .inner {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 0 12px;
+    }
+    #inner-hide {
+        display: none;
+    }
+    .thumb {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .thumb-img {
+        margin-left: 22px !important;
+    }
+    .close-the-search-panel {
+        position: relative;
+        top: 20%;
+        margin-top: -24px;
+        padding: 0 0 6px 0;
+    }
+    .close-the-search-panel-title {
+        right: 38%;
+    }
+    .header__cart {
+        margin-right: -30px;
+    }
+    .pagination-item__link {
+        min-width: 34px;
+    }
+    .pagination-item {
+        margin: 5px;
+    }
+    .wrapper-item {
+        margin: 6px 20px;
+    }
+    .wrapper-link {
+        font-size: 2rem;
+        padding: 5px 16px;
+    }
+    .footer__content {
+        padding: 0 16px;
+    }
+    .footer__download-apps {
+        flex: unset;
+    }
+    .footer__download-app-link {
+        display: block;
+        padding: 0 0 10px 8px;
+    }
+    /* trang-chu.html */
+    .product-free-a {
+        padding: 0;
+    }
+    .banner__sliders {
+        justify-content: space-around
+    }
+    .shock__today {
+        padding: 0;
+    }
+    /* .sticky-list {
+        overflow-x: scroll;
+    } */
+    .sticky-list-tab {
+        width: 50px;
+    }
+    .highlight-container {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .home-product-item__action {
+        padding-top: 10px;
+        flex-direction: column;
+    }
+    /* gioi-thieu.html */
+    .introduce,
+    .info {
+        padding: 6px 10px;
+        margin: 20px 0;
+    }
+    .introduce-title,
+    .info-title {
+        font-size: 2.6rem;
+    }
+    /* san-pham.html */
+    .home-product-item {
+        margin: 12px 5px 0;
+    }
+    .product-shock {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .product-banner {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .product-banner img {
+        height: 25px;
+    }
+    .home-product-item__origin {
+        font-size: 1.35rem;
+    }
+    /* Sản phầm chi tiết */
+    .product__content-right-name h1 {
+        padding-right: 10px;
+    }
+    .product__content-right--description-gradient {
+        content: '';
+        position: relative;
+        margin: 12px 90px;
+        width: 100%;
+        height: 3px;
+        background: -webkit-radial-gradient(#3980dc, #fff);
+        background: -moz-radial-gradient(#3980dc, #fff);
+        background: radial-gradient(#3980dc, #fff);
+    }
+    .product__main {
+        padding: 0 3%;
+    }
+    .product__content-right-name,
+    .product__content-right-price {
+        justify-content: center;
+    }
+    .product__content-right-name {
+        flex-wrap: wrap;
+    }
+    .product__content-right-color,
+    .product__content-right-size,
+    .product__content-right-quantity {
+        align-items: center;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        padding-bottom: 10px;
+    }
+    .product-content-right-contact {
+        margin-bottom: 16px;
+    }
+    /* dang-ky.html */
+    .sign-up .left {
+        width: 100%;
+        padding: 10px 20px 0 20px;
+    }
+    #message {
+        top: 67px;
+    }
+    .sign-up {
+        width: 100%;
+        display: grid;
+        justify-items: center;
+    }
+    .sign-up>div {
+        width: 100%;
+    }
+    .or {
+        display: none !important;
+        /* top: 65%; */
+    }
+    .right ul {
+        padding: 0;
+    }
+    .right li a {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    /* dang-nhap.html */
+    .content_sign-in {
+        background-color: #fff;
+    }
+    .content-heading {
+        font-size: 2.2rem;
+        line-height: 40px;
+    }
+    #or_sign-in {
+        top: 55%;
+    }
+    .auth-form {
+        margin: 0 16px;
+        width: auto;
+        left: 0;
+    }
+    .auth-form__socials {
+        display: flex;
+        flex-direction: column;
+    }
+    .auth-form__socials--facebook {
+        margin-bottom: 10px;
+    }
+    .auth-form__heading {
+        font-size: 2rem;
+    }
+    .btn {
+        font-size: 1.3rem;
+    }
+    /* don-hang.html */
+    #cart {
+        padding-left: 6px;
+        padding-right: 6px;
+        /* height: 50vh;
+        overflow-y: scroll; */
+    }
+    .container__title {
+        margin-top: 15px;
+    }
+    .container__table thead tr {
+        height: 56px;
+    }
+    .container__table thead tr th {
+        font-size: 1.5rem;
+    }
+    #product-detail tr td {
+        padding: 3px;
+        font-size: 1.5rem;
+    }
+    #product-detail tr td:nth-child(2) {
+        width: 65px;
+        font-size: 1.6rem;
+        font-weight: 500;
+        line-height: 2rem;
+        overflow: hidden;
+        color: var(--text-color);
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        text-align: center;
+        border-bottom: none;
+    }
+}
+
+
+/* Mobile <373px */
+
+@media screen and (max-width: 373px) {
+    .grid.wide {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .row {
+        margin: 0 5px;
+    }
+    .output__search {
+        left: -18px;
+    }
+    .input-search {
+        width: 270px;
+        padding: 0;
+    }
+    .header__logo {
+        width: unset;
+        margin-right: -20px;
+    }
+    .header__cart {
+        margin-right: -8px;
+    }
+    .or {
+        top: 63%;
+    }
+    .nav__mobile {
+        width: 188px;
+    }
+    .nav__mobile-list {
+        margin-left: -45px;
+    }
+    .nav__bars-btn {
+        margin-left: 0;
+    }
+    .header__mobile-search-icon {
+        padding-left: 16px;
+    }
+    .product__title {
+        margin: 0px 14px;
+    }
+    .shock-today-img {
+        height: 25px;
+    }
+    .product-free-ship {
+        padding-left: 5px;
+    }
+    .sticky-item-box {
+        width: 152px;
+        height: 24px;
+        line-height: 2rem;
+    }
+    .sticky-item-box-title .auto-input {
+        font-size: 1.6rem;
+    }
+    .pagination-item__link {
+        min-width: 25px;
+    }
+    .product-main {
+        margin-left: -6px;
+        margin-right: -6px;
+    }
+    .home-product-item {
+        margin: 12px 0 0;
+    }
+    .product-content-right-icon {
+        margin: 0 8px;
+    }
+    /* don-hang.html */
+    .container__title {
+        margin-top: 20px;
+    }
+    .container__table thead tr {
+        height: 40px;
+    }
+    .container__table thead tr th {
+        font-size: 1.2rem;
+    }
+    #product-detail tr td {
+        padding: 3px;
+        font-size: 1.2rem;
+    }
+    #total {
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+    .container__order button {
+        padding: 5px;
+    }
+}
