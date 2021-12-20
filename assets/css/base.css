@@ -594,7 +594,7 @@ a {
 }
 
 .btn-cart:hover {
-    background: red;
+    background: var(--red-color);
 }
 
 .btn.btn--normal :hover {

@@ -1523,15 +1523,15 @@ File style.css là file css dùng chung cho tất cả trang
 }
 
 .product-more:hover:before {
-    -webkit-transform: skew(45deg) translateX(-55%);
-    -ms-transform: skew(45deg) translateX(-55%);
-    transform: skew(45deg) translateX(-55%);
+    -webkit-transform: skew(0deg) translateX(-55%);
+    -ms-transform: skew(0deg) translateX(-55%);
+    transform: skew(0deg) translateX(-55%);
 }
 
 .product-more:hover:after {
-    -webkit-transform: skew(45deg) translateX(55%);
-    -ms-transform: skew(45deg) translateX(55%);
-    transform: skew(45deg) translateX(55%);
+    -webkit-transform: skew(0deg) translateX(55%);
+    -ms-transform: skew(0deg) translateX(55%);
+    transform: skew(0deg) translateX(55%);
 }
 
 .product-more:hover .product-more__show {
@@ -1554,10 +1554,6 @@ File style.css là file css dùng chung cho tất cả trang
     -ms-flex-align: center;
     align-items: center;
     opacity: 0;
-    -webkit-transition: opacity .2s ease-out;
-    -o-transition: opacity .2s ease-out;
-    transition: opacity .2s ease-out;
-    will-change: opacity;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -1566,6 +1562,24 @@ File style.css là file css dùng chung cho tất cả trang
     transform: translate(-50%, -77.5%);
     z-index: 999;
     cursor: pointer;
+    -webkit-transform-origin: 50% 65%;
+    -ms-transform-origin: 50% 65%;
+    transform-origin: 50% 65%;
+    -webkit-transition: opacity 0.2s, -webkit-transform 2s, -webkit-filter 3s ease-in-out;
+    transition: opacity 0.2s, -webkit-transform 2s, -webkit-filter 3s ease-in-out;
+    -o-transition: opacity 0.2s, transform 2s, filter 3s ease-in-out;
+    transition: opacity 0.2s, transform 2s, filter 3s ease-in-out;
+    transition: opacity 0.2s, transform 2s, filter 3s ease-in-out, -webkit-transform 2s, -webkit-filter 3s ease-in-out;
+    -webkit-filter: brightness(150%);
+    filter: brightness(150%);
+}
+
+.product-more__show:hover {
+    -webkit-filter: brightness(100%);
+    filter: brightness(100%);
+    -webkit-transform: scale(3);
+    -ms-transform: scale(3);
+    transform: scale(3);
 }
 
 .button {
@@ -2370,6 +2384,10 @@ table tbody tr td img {
 
 /* Container trend banner */
 
+.container-trend-banner {
+    margin: 10px 0 20px 0;
+}
+
 .trend__title--item {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2397,10 +2415,6 @@ table tbody tr td img {
 .trend__title--text:hover {
     cursor: pointer;
     color: var(--primary-color);
-}
-
-.container-trend-banner {
-    margin: 10px 0 20px 0;
 }
 
 .banner-slider-img {
