@@ -80,26 +80,6 @@ function smoothScrollBackToTop() {
     window.scrollTo(0, 0);
 }
 
-// countdown time
-let time__seconds = document.querySelector("#time__seconds");
-let time__minutes = document.querySelector("#time__minutes");
-let time__hours = document.querySelector("#time__hours");
-
-function setTime() {
-    if (time__seconds.value <= 60) {
-        time__seconds.value--;
-    }
-    if (time__seconds.value == 0) {
-        time__seconds.value = 59;
-        time__minutes.value--;
-    }
-    if (time__minutes.value == 0) {
-        time__hours.value--;
-        time__minutes.value = 59;
-    }
-}
-setInterval(setTime, 1000);
-
 // Page container
 var container = {
     showInput: function() {

@@ -806,55 +806,6 @@ a {
 }
 
 
-/* Pagination */
-
-.pagination {
-    margin: 10px 0 20px;
-    padding-left: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-}
-
-.pagination-item {
-    margin: 0 16px;
-}
-
-.pagination-item--active {
-    border-radius: 3px;
-    color: var(--white-color);
-    background-color: var(--primary-color);
-}
-
-.pagination-item--active .pagination-item__link:hover,
-.pagination-item__link:hover {
-    border-radius: 3px;
-    color: #000;
-    background-image: -o-radial-gradient(center, circle 248px, #16d9e3 0%, #30c7ec 47%, #46aef7 100%);
-    background-image: radial-gradient(circle 248px at center, #16d9e3 0%, #30c7ec 47%, #46aef7 100%);
-}
-
-.pagination-item__link {
-    --height: 30px;
-    display: block;
-    font-size: 2.2rem;
-    font-weight: 300;
-    color: #000;
-    min-width: 40px;
-    height: var(--height);
-    width: 20px;
-    line-height: var(--height);
-    text-align: center;
-    border-radius: 3px;
-}
-
-
 /* Sản phẩm chi tiết */
 
 .product__content-color--000 {

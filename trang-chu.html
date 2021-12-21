@@ -26,7 +26,6 @@ Trang chủ: file trang-chu.html
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="./assets/css/base.css">
-    <link rel="stylesheet" href="./assets/css/style-2.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/grid.css">
     <link rel="stylesheet" href="./assets/css/responsive.css">
@@ -2610,7 +2609,7 @@ Trang chủ: file trang-chu.html
                                 <div class="home-product-item">
                                     <a href="#" class="home-product-item__link">
                                         <div class="home-product-item__img" style="background-image: url(./assets/img/product-goiysp/kinh-sep.jpg);"></div>
-                                        <h4 class="home-product-item__name"> Mắt Kính SƠN TÙNG - Kính nam nữ hàn quốc đi ngày và đêm cao cấp HOT TREND</h4>
+                                        <h4 class="home-product-item__name">Mắt Kính SƠN TÙNG - Kính nam nữ hàn quốc đi ngày và đêm cao cấp HOT TREND</h4>
                                         <div class="home-product-item__price">
                                             <span class="home-product-item__price-old">100.000&#8363;</span>
                                             <span class="home-product-item__price-current">56.000&#8363;</span>
@@ -2642,7 +2641,7 @@ Trang chủ: file trang-chu.html
                                 <div class="home-product-item">
                                     <a href="#" class="home-product-item__link">
                                         <div class="home-product-item__img" style="background-image: url(./assets/img/product-goiysp/dong-ho.jpg);"></div>
-                                        <h4 class="home-product-item__name"> Đồng hồ thời trang nam nữ Sport điện tử full chức năng</h4>
+                                        <h4 class="home-product-item__name">Đồng hồ thời trang nam nữ Sport điện tử full chức năng</h4>
                                         <div class="home-product-item__price">
                                             <span class="home-product-item__price-old">100.000&#8363;</span>
                                             <span class="home-product-item__price-current">50.000&#8363;</span>
@@ -3368,6 +3367,28 @@ Trang chủ: file trang-chu.html
 
     <!---------------------- Javascript ---------------------->
 
+    <script>
+        // countdown time
+        let time__seconds = document.querySelector("#time__seconds");
+        let time__minutes = document.querySelector("#time__minutes");
+        let time__hours = document.querySelector("#time__hours");
+
+        function setTime() {
+            if (time__seconds.value <= 60) {
+                time__seconds.value--;
+            }
+            if (time__seconds.value == 0) {
+                time__seconds.value = 59;
+                time__minutes.value--;
+            }
+            if (time__minutes.value == 0) {
+                time__hours.value--;
+                time__minutes.value = 59;
+            }
+        }
+        setInterval(setTime, 1000);
+    </script>
+
     <!-- Javascript Like (jquery) -->
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script>
@@ -3432,7 +3453,7 @@ Trang chủ: file trang-chu.html
         });
     </script>
 
-    <!-- Chữ chạy -->
+    <!-- Chữ chạy (typed js) -->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script>
         var typed = new Typed(".auto-input", {

@@ -1996,39 +1996,6 @@ Sản phẩm: file san-pham.html
                     </div>
                 </div>
 
-                <!-- Thanh pagination -->
-                <ul class="pagination">
-                    <!-- Pagination -->
-                    <li class="pagination-item">
-                        <a href="" class="pagination-item__link">
-                            <i class="pagination_icon fas fa-angle-left"></i>
-                        </a>
-                    </li>
-                    <li class="pagination-item pagination-item--active">
-                        <a href="" class="pagination-item__link">1</a>
-                    </li>
-                    <li class="pagination-item">
-                        <a href="" class="pagination-item__link">2</a>
-                    </li>
-                    <li class="pagination-item">
-                        <a href="" class="pagination-item__link">3</a>
-                    </li>
-                    <li class="pagination-item">
-                        <a href="" class="pagination-item__link">4</a>
-                    </li>
-                    <li class="pagination-item">
-                        <a href="" class="pagination-item__link">...</a>
-                    </li>
-                    <li class="pagination-item">
-                        <a href="" class="pagination-item__link">10</a>
-                    </li>
-                    <li class="pagination-item">
-                        <a href="" class="pagination-item__link">
-                            <i class="pagination_icon fas fa-angle-right"></i>
-                        </a>
-                    </li>
-                </ul>
-
                 <!-- Cart modal -->
                 <!-- <div class="cart-modal">
                     <section class="cart">
@@ -2682,6 +2649,28 @@ Sản phẩm: file san-pham.html
 
 
     <!---------------------- Javascript ---------------------->
+
+    <script>
+        // countdown time
+        let time__seconds = document.querySelector("#time__seconds");
+        let time__minutes = document.querySelector("#time__minutes");
+        let time__hours = document.querySelector("#time__hours");
+
+        function setTime() {
+            if (time__seconds.value <= 60) {
+                time__seconds.value--;
+            }
+            if (time__seconds.value == 0) {
+                time__seconds.value = 59;
+                time__minutes.value--;
+            }
+            if (time__minutes.value == 0) {
+                time__hours.value--;
+                time__minutes.value = 59;
+            }
+        }
+        setInterval(setTime, 1000);
+    </script>
 
     <!-- Javascript Like (jquery) -->
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>

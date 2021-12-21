@@ -371,12 +371,6 @@ File responsive.css là file css dùng để định dạng trang web hiển th�
     .header__cart {
         margin-right: -30px;
     }
-    .pagination-item__link {
-        min-width: 34px;
-    }
-    .pagination-item {
-        margin: 5px;
-    }
     .wrapper-item {
         margin: 6px 20px;
     }
@@ -629,9 +623,6 @@ File responsive.css là file css dùng để định dạng trang web hiển th�
     }
     .sticky-item-box-title .auto-input {
         font-size: 1.6rem;
-    }
-    .pagination-item__link {
-        min-width: 25px;
     }
     .product-main {
         margin-left: -6px;
