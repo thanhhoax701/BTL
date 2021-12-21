@@ -1,4 +1,4 @@
-<========== References ==========>
+<================= References =================>
 
 1) Chuyển đổi thuộc tính để thích ứng với mỗi trình duyệt khác nhau: https://autoprefixer.github.io/
 
