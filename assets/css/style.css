@@ -719,12 +719,15 @@ File style.css là file css dùng chung cho tất cả trang
     font-size: 2.6rem;
     color: var(--white-color);
     margin-top: 6px;
+    -webkit-transition: color 0.5s linear;
+    -o-transition: color 0.5s linear;
     transition: color 0.5s linear;
 }
 
 .header__cart-icon:hover {
     color: var(--red-color);
     /* animation: flash 0.7s ease-in-out infinite both; */
+    -webkit-animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) infinite both;
     animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) infinite both;
 }
 
