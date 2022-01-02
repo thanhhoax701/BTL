@@ -724,7 +724,8 @@ File style.css là file css dùng chung cho tất cả trang
 
 .header__cart-icon:hover {
     color: var(--red-color);
-    animation: flash 0.7s ease-in-out infinite both;
+    /* animation: flash 0.7s ease-in-out infinite both; */
+    animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
 }
 
 
