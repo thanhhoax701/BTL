@@ -1,6 +1,6 @@
 /* ----------------------------------------------------------
 
-File responsive.css là file css dùng để định dạng trang web hiển thị được trên các thiết bị (Desktop, Tablet, Mobile)
+File responsive.css là file css dùng để định dạng index hiển thị được trên các thiết bị (Desktop, Tablet, Mobile)
 1. Người viết: 
     - Trần Thanh Hòa _ MSSV: B1908387 _ Email: hoaB1908387@student.ctu.edu.vn
     - Đỗ Quốc Trường _ MSSV: B1913349 _ Email: truongB1913349@student.ctu.edu.vn
@@ -102,7 +102,7 @@ File responsive.css là file css dùng để định dạng trang web hiển th�
     .discount__product--title::after {
         display: none;
     }
-    /* trang-chu.html */
+    /* index.html */
     .container-sticky {
         position: static;
     }
@@ -388,7 +388,7 @@ File responsive.css là file css dùng để định dạng trang web hiển th�
         display: block;
         padding: 0 0 10px 8px;
     }
-    /* trang-chu.html */
+    /* index.html */
     .product-free-a {
         padding: 0;
     }
